@@ -1,12 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@579&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 
 * {
-  font-family: "Prompt", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-  background-color: black;
+    font-family: "Source Code Pro", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 579;
+    font-style: normal;
+    background-color: black;
+    max-width: 1200px;
+}
 
+.button {
+    color: white;
+    font-size: 30px;
+    border-radius: 8.5px;
+    border: black;
+    text-decoration: solid;
+}
+
+.button:hover {
+    text-decoration: underline;
 }
 
 .p {
@@ -16,15 +29,47 @@
 }
 
 .t {
-    font-size: 7rem;
+    font-size: 120px;
     color: white;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     text-decoration: none;
     font-family: "Pirata One", system-ui;
+    border: black;
 }
 
 .t:hover {
     color: lightgray;
 }
 
+.t:focus {
+    outline: none;
+}
+
+.button:focus, .t:focus {
+    outline: none;
+
+}
+
+@media (max-width: 767px) {
+    .t {
+        font-size: 100px
+    }
+    .t:focus {
+        outline: none;
+    }
+}
+
+.footer {
+    text-align: end;
+}
+
+.a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.a:focus {
+    outline: none;
+}
